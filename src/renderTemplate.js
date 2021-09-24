@@ -8,9 +8,9 @@ export default function renderTemplate(tokens, data) {
 
     for (let i = 0; i < tokens.length; i++) {
         let currentToken = tokens[i]
+
         let type = currentToken[0]
         let value = currentToken[1]
-
         switch (type) {
             case 'text':
                 result += value
